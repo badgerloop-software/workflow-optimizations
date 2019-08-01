@@ -1,0 +1,104 @@
+[
+	{
+		"type": "divider"
+	},
+	{
+		"type": "section",
+		"block_id": "section678",
+		"text": {
+			"type": "mrkdwn",
+			"text": "Which group is this task for?"
+		},
+		"accessory": {
+			"action_id": "text1234",
+			"type": "static_select",
+			"placeholder": {
+				"type": "plain_text",
+				"text": "EE, ME, or OPS"
+			},
+			"options": [
+				{
+					"text": {
+						"type": "plain_text",
+						"text": "Electrical"
+					},
+					"value": "Electrical"
+				},
+				{
+					"text": {
+						"type": "plain_text",
+						"text": "Mechanical"
+					},
+					"value": "Mechanical"
+				},
+				{
+					"text": {
+						"type": "plain_text",
+						"text": "Operations"
+					},
+					"value": "Operations"
+				}
+			]
+		}
+	},
+	{
+		"type": "section",
+		"text": {
+			"type": "mrkdwn",
+			"text": "What's the due date?"
+		},
+		"accessory": {
+			"type": "datepicker",
+			"initial_date": "1990-04-28",
+			"placeholder": {
+				"type": "plain_text",
+				"text": "Select a date",
+				"emoji": true
+			}
+		}
+	},
+	{
+		"type": "divider"
+	},
+    {
+        "type": "section",
+        "block_id": "person",
+        "text": {
+            "type": "mrkdwn",
+            "text": "Who is this task assigned to?"
+        },
+        "accessory": {
+            "action_id": "text1234",
+            "type": "users_select",
+            "placeholder": {
+                "type": "plain_text",
+                "text": "Select an item"
+      		}
+        }
+    },
+	{
+		"type": "section",
+		"text": {
+			"type": "mrkdwn",
+			"text": "You can add a button alongside text in your message. "
+		},
+		"accessory": {
+			"type": "button",
+			"text": {
+				"type": "plain_text",
+				"text": "Button",
+				"emoji": true
+			},
+			"value": "click_me_123"
+		}
+	},
+	{
+		"type": "context",
+		"elements": [
+			{
+				"type": "mrkdwn",
+				"text": "If you want to see the raw data behind this, check out https://docs.google.com/spreadsheets/d/1AmfCou-m5gC2aZtrLSBCJWY4MfFyL49Q5tKiobqCE8E/edit#gid=0"
+			}
+		]
+	}
+]
